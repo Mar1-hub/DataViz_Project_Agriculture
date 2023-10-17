@@ -1,59 +1,70 @@
 # DataViz_Project_Agriculture
+description des variables :
 
-Code AGB int
+agrybalise synthèse.csv :
 
-Code CIQUAL int
+code agb: code agribalyse
 
-Groupe d'aliment string
+code ciqual: code ciqual
 
-Sous-groupe d'aliment string
+groupe d'aliment: nom du groupe auquel appartient l’aliment. ex : aliment infantile,ingredient divers,boisson
 
-Nom du Produit en Français string
+sous-groupe d'aliment: sous-groupe auquel il appartient. ex : herbes, algues, sauces,boisson sans alcool
 
-LCI Name string
+nom du produit en français: nom donné en france
 
-code saison int
+lci name: nom de la database lci 
 
-code avion booleen
+code saison: numéro de la saison
 
-Livraison string
+code avion: vol ou non par avion
 
-Matériau d'emballage string
+livraison: température durant livraison
 
-Préparation string
+matériau d'emballage: type de matériau
 
-DQR float
+préparation: devoir ou non de préparer
 
-Score unique EF float
+dqr: data quality ratio :  indique le niveau de confiance que l'on peut avoir dans le score. 
+- proche de 1=fiable ; 
+- proche de 5 : incertitude importante. 
+une donnée avec un dqr >= 3 est considérée comme peu fiable.
 
-Changement climatique float
+score unique ef: éco indicateur en mpt(millipoint)/kg de prod . 1 pt correspond à l’impact environnemental annuel d’un habitant.
 
-Appauvrissement de la couche d'ozone float
+changement climatique: modification du climat en kg co2/kg de produit
 
-Rayonnements ionisants tel_fr
+appauvrissement de la couche d'ozone: incidence sur la réduction de la couche d’ozone en kg de trichlorofluomethane : kg cfc11/ kg de produit
 
-Formation photochimique d'ozone float
+rayonnements ionisants: radiation ionique par uranium en kg d’u235/ kg de produit
 
-Particules fines float
+formation photochimique d'ozone: impact sur la présence d’ozone (chimiquement mauvaise sur la santé) au niveau du sol en kg non_methane volatils organic compounds(kg de nmvo)/ kg de produit
 
-Effets toxicologiques sur la santé humaine : substances non-cancérogènes float
+particules fines: incidence sur la santé humaine en disease incidence
 
-Effets toxicologiques sur la santé humaine : substances cancérogènes float
+effets toxicologiques sur la santé humaine substances non-cancérogènes: impact sur la santé lié à l’exposition aux contaminants chimiques via les pollutions du milieu (air, eau, sol). ex :pesticides, des métaux lourds, encore des polluants industriels. l’exposition par ingestion directe d’un aliment contenant des résidus de pesticides n’est pour l’instant pas intégrée . en ctuh
 
-Acidification terrestre et eaux douces tel_fr
+effets toxicologiques sur la santé humaine : substances cancérogènes: impact sur la santé lié à l’exposition aux contaminants chimiques via les pollutions du milieu (air, eau, sol). ex :pesticides, des métaux lourds, encore des polluants industriels. l’exposition par ingestion directe d’un aliment contenant des résidus de pesticides n’est pour l’instant pas intégrée . en ctuh
 
-Eutrophisation eaux douces float
+acidification terrestre et eaux douces: émission chimiques dans l’atmosphère d’acide en molh+/kg de produit
 
-Eutrophisation marine float
+eutrophisation eaux douces: enrichissement en nutriment en kg de p / kg de produit
 
-Eutrophisation terrestre tel_fr
+eutrophisation marine: pareil que eaux douces mais en kg n/ kg de produit
 
-Écotoxicité pour écosystèmes aquatiques d'eau douce float
+eutrophisation terrestre: pareil que eaux douces mais en mol n/ kg de produit
 
-Utilisation du sol float
+ecotoxicité pour écosystèmes aquatiques d'eau douce: contamination d’eaux douces enctue
 
-Épuisement des ressources eau float
+utilisation du sol: impact sur la dégradation des terres en point
 
-Épuisement des ressources énergétiques float
+épuisement des ressources eau: impact sur le retrait des eaux en m^3 d’eau utilisées liée à la rareté locale de l’eau.
 
-Épuisement des ressources minéraux float
+épuisement des ressources énergétiques: épuisement des ressources non renouvelables en mj
+
+épuisement des ressources minéraux : kg of antinomy(kg sb)/kg produit
+valeurs recommandées.
+ 
+I)	Présentation de la base de données
+II)	Impact sur la santé et sur l’environnement
+III)	Conclusion : identification des facteurs les + et les – dangereux 
